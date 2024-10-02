@@ -45,3 +45,24 @@ Codey is an AI-powered teaching assistant designed to help users learn Data Stru
    flask run
    ```
 5. Visit http://localhost:5000 in your browser to use Codey.
+
+## Usage
+Open the chat UI in your browser.
+Type in your DSA-related question or problem.
+The AI will guide you to the solution through a series of Socratic questions.
+
+## Challenges
+One of the key challenges was handling conversation history effectively to ensure the AI could maintain context across multiple exchanges. We overcame this by passing the conversation history back to the Gemini model on each API call, allowing it to understand and respond based on prior interactions. Additionally, we faced rate-limiting issues from the Gemini API, which required optimizing how we structure and batch our requests to ensure smooth user interactions.
+
+## Future Opportunities
+Expansion to Other Domains: While currently focused on DSA, Codey can be extended to cover additional subjects such as Operating Systems, Computer Networks, or even non-technical fields.
+Fine-tuning the Model: In the future, the model could be fine-tuned specifically for DSA concepts, making it even more adept at Socratic teaching in this domain.
+Multi-lingual Support: Introduce support for multiple languages to make Codey accessible to non-English speakers.
+
+## Contributing
+We welcome contributions from the community! Please feel free to submit issues or pull requests. If you'd like to contribute, here's how to get started:
+
+1. Fork the repository.
+2. Create a new branch (git checkout -b feature-branch).
+3. Make your changes.
+4. Submit a pull request.
